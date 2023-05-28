@@ -1,0 +1,11 @@
+kw1
+SELECT `imie`, `nazwisko`, `adres`, `miasto`, `czyRODO`, `czyBadania` FROM `pracownicy` WHERE `pracownicy`.`id` = '2';
+
+kw2
+SELECT COUNT(`pracownicy`.`id`) AS liczba_pracownikow FROM `pracownicy`;
+
+kw3
+SELECT `pracownicy`.`id`, `pracownicy`.`imie`, `pracownicy`.`nazwisko` FROM `pracownicy` WHERE `pracownicy`.`id` = '2';
+
+kw4
+SELECT `pracownicy`.`id`, `stanowiska`.`nazwa`, `stanowiska`.`opis` FROM `pracownicy` INNER JOIN `stanowiska` ON `pracownicy`.`stanowiska_id` = `stanowiska`.`id` WHERE `pracownicy`.`id` = '2';
